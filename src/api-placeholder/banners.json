@@ -1,20 +1,20 @@
 [
   {
-    "bg_image": "https://loremflickr.com/cache/resized/82_245242781_4ac9226782_o_1280_640_nofilter.jpg",
+    "bg_image": "https://images.unsplash.com/photo-1575218823251-f9d243b6f720?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     "title": "10% на свежий урожай",
     "description": "Успей купить свежие овощи со скидкой",
     "start_date": "16.06",
     "end_date": "05.07"
   },
   {
-    "bg_image": "https://loremflickr.com/cache/resized/65535_50503165383_764f4ded2a_k_1280_640_nofilter.jpg",
+    "bg_image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     "title": "Скидка на пиццу 15%",
     "description": "Вкусная пицца и вкусная цена весь август",
     "start_date": "01.07",
     "end_date": "31.07"
   },
   {
-    "bg_image": "https://loremflickr.com/cache/resized/65535_52729925089_3fd857543c_k_1280_640_nofilter.jpg",
+    "bg_image": "https://images.unsplash.com/photo-1599038064230-17a52bd8f2f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1958&q=80",
     "title": "Охладись с выгодой",
     "description": "Скидки на мороженное до 50%",
     "start_date": "11.08",
