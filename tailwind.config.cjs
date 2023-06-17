@@ -15,7 +15,11 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'main-accent': colors.red["600"]
+        'main-accent': colors.red["600"],
+        'black-alpha': {
+          "60": 'rgba(0,0,0,0.6)',
+          "80": 'rgba(0,0,0,0.8)'
+        }
       }
     }
   },
