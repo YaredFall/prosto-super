@@ -11,7 +11,7 @@ const SiteHeader:FC<SiteHeaderProps> = () => {
         <header className={"flex w-full items-center"}>
             <Link href={"/"} className={"contents"}>
 
-            <h1 className={"text-2xl font-bold flex flex-col leading-none px-6 py-4 "}>
+            <h1 className={"text-4xl font-bold flex flex-col leading-none px-8 py-6 "}>
                     <span className={"pr-2"}>Просто</span>
                     <span className={"text-main-accent self-end"}>Супер</span>
             </h1>

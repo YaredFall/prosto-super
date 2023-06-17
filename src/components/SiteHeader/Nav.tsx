@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import { tw } from "twind";
 import Link from "next/link";
 import classNames from "classnames";
 
@@ -19,7 +18,7 @@ const NAV_ITEMS = [
 
 const Nav:FC<NavProps> = () => {
     return (
-        <nav className={"text-lg font-medium ml-auto px-6"}>
+        <nav className={"text-xl font-medium ml-auto px-8"}>
             <ul className={"grid items-center grid-flow-col"}>
                 {NAV_ITEMS.map(item => (
                     <li key={item} className={"relative text-center"}>
