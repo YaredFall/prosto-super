@@ -3,7 +3,7 @@ import { Roboto } from 'next/font/google'
 import SiteHeader from "@/components/SiteHeader";
 import React from "react";
 
-const roboto = Roboto({ subsets: ['cyrillic'], weight: ["100", "300", "400", "500", "700", "900"] })
+const roboto = Roboto({ subsets: ['latin', 'cyrillic'], weight: ["100", "300", "400", "500", "700", "900"], display: 'swap' })
 
 export const metadata = {
   title: 'Create Next App',
