@@ -1,0 +1,74 @@
+[
+    {
+        "id": "bakery",
+        "name": "Хлеб и выпечка",
+        "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnJlYWR8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&w=640&q=60",
+        "link": "bakery"
+    },
+    {
+        "id": "vegetables",
+        "name": "Овощи",
+        "image": "https://images.unsplash.com/photo-1597362925123-77861d3fbac7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=640&q=60",
+        "link": "vegetables"
+    },
+    {
+        "id": "fruits",
+        "name": "Фрукты",
+        "image": "https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=640&q=60",
+        "link": "fruits"
+    },
+    {
+        "id": "meat",
+        "name": "Птица и мясо",
+        "image": "https://images.unsplash.com/photo-1448907503123-67254d59ca4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=640&q=60",
+        "link": "meat"
+    },
+    {
+        "id": "meat-products",
+        "name": "Мясные изделия",
+        "image": "https://images.unsplash.com/photo-1460122109654-7e46ab4fc9b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=640&q=60",
+        "link": "meat-products"
+    },
+    {
+        "id": "seafood",
+        "name": "Рыба и морепродукты",
+        "image": "https://images.unsplash.com/photo-1635843097783-dda76d61f7d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=640&q=60",
+        "link": "seafood"
+    },
+    {
+        "id": "milk",
+        "name": "Молочная продукция",
+        "image": "https://images.unsplash.com/photo-1563636619-e9143da7973b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=640&q=60",
+        "link": "milk"
+    },
+    {
+        "id": "cheese",
+        "name": "Сыр",
+        "image": "https://images.unsplash.com/photo-1683314573422-649a3c6ad784?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=640&q=60",
+        "link": "cheese"
+    },
+    {
+        "id": "icecream",
+        "name": "Мороженное",
+        "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=640&q=60",
+        "link": "icecream"
+    },
+    {
+        "id": "fastfood",
+        "name": "Готовая еда",
+        "image": "https://images.unsplash.com/photo-1613564834361-9436948817d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=640&q=60",
+        "link": "fastfood"
+    },
+    {
+        "id": "drinks",
+        "name": "Вода, соки и напитки",
+        "image": "https://images.unsplash.com/photo-1625740822008-e45abf4e01d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=640&q=60",
+        "link": "drinks"
+    },
+    {
+        "id": "chem",
+        "name": "Бытовая химия",
+        "image": "https://images.unsplash.com/photo-1629196869698-2ce173dacc24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=640&q=60",
+        "link": "chem"
+    }
+]
