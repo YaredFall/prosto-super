@@ -5,7 +5,7 @@ type BannerProps = {
     data: any
 }
 
-const Banner: FC<BannerProps> = ({ data, active }) => {
+const Banner: FC<BannerProps> = ({ data }) => {
     return (
         <div className={"relative contents"}>
             <Image className={"object-cover w-full bg-black "} src={data.bg_image} alt={""} fill={true}/>

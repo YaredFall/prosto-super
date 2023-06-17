@@ -2,7 +2,7 @@
 
 import { FC, Ref, useEffect, useRef, useState } from 'react';
 import banners from '../../api-placeholder/banners.json';
-import Banner from "@/components/Slider/Banner";
+import Banner from './Banner';
 import classNames from "classnames";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 

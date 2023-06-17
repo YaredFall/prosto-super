@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import { tw } from "twind";
-import Carousel from "@/components/Slider/Carousel";
+import Carousel from '@/components/BannerCarousel/Carousel'
 
 export default function Home() {
   return (
