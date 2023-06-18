@@ -1,4 +1,5 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
+const plugin = require('tailwindcss/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -23,5 +24,16 @@ module.exports = {
       }
     }
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addUtilities }) {
+      addUtilities({
+        '.px-main-layout': {
+          '@apply px-16 lg:px-32': {}
+        },
+        '.grid-main-layout': {
+          '@apply grid grid-cols-[repeat(auto-fit,minmax(max(20%,16rem),1fr))] gap-8': {}
+        }
+      })
+    })
+  ]
 }

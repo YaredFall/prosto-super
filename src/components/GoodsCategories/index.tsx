@@ -6,9 +6,9 @@ type Props = {}
 
 export default function GoodsCategories({}: Props) {
   return (
-    <section className={"px-16 lg:px-32 my-16"}>
+    <section className={"my-16 px-main-layout"}>
         <h2 className={"text-4xl mb-8 font-medium"} children={"Категории товаров"} />
-        <ul className={"w-full grid grid-cols-[repeat(auto-fit,minmax(max(20%,16rem),1fr))] gap-8"}>
+        <ul className={"w-full grid-main-layout"}>
             {categories.map(c => (<Category data={c} key={c.id} />))}
         </ul>
     </section>
