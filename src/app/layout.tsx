@@ -2,6 +2,7 @@ import './globals.css'
 import { Roboto } from 'next/font/google'
 import SiteHeader from "@/components/SiteHeader";
 import React from "react";
+import SiteFooter from "@/components/SiteFooter";
 
 const roboto = Roboto({ subsets: ['latin', 'cyrillic'], weight: ["100", "300", "400", "500", "700", "900"], display: 'swap' })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={roboto.className}>
       <SiteHeader />
       {children}
+      <SiteFooter />
       </body>
     </html>
   )
