@@ -1,6 +1,8 @@
 import React from 'react'
-import categories from '@/api-placeholder/goods-categories.json'
 import Category from './Category'
+import { CategoryData } from "@/utils/types"
+
+const categories: Array<CategoryData> = require('@/api-placeholder/goods-categories.json')
 
 type Props = {}
 

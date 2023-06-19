@@ -1,25 +1,20 @@
 import Link from 'next/link'
 import Image from "next/image";
 import React from 'react'
-
-type CategoryData = {
-    id: string
-    name: string
-    image: string
-    link: string
-}
+import { CategoryData, GoodsCategories } from "@/utils/types";
+import { GoodsCategoriesTranscript } from "@/utils/misc";
 
 type Props = {
-    data: CategoryData
+  data: CategoryData
 }
 
-export default function Category({data}: Props) {
+export default function Category({ data }: Props) {
   return (
-    <Link href={data.link} className='grid group'>
-        <div className={"bg-gray-300 aspect-square relative rounded-2xl overflow-hidden"}>
-            {data.image && <Image src={data.image} alt={data.name} fill className={"object-cover transition-[filter] group-hover:brightness-75"} />}
-        </div>
-        <h3 className={"text-2xl font-medium py-3 transition-colors group-hover:text-main-accent"} children={data.name} />
+    <Link href={`/catalog?category=${data.id}`} className='grid group'>
+      <div className={"bg-gray-300 aspect-square relative rounded-2xl overflow-hidden"}>
+        {data.image && <Image src={data.image} alt={GoodsCategoriesTranscript.get(data.id) || ""} fill className={"object-cover transition-[filter] group-hover:brightness-75"} />}
+      </div>
+      <h3 className={"text-2xl font-medium py-3 transition-colors group-hover:text-main-accent"} children={GoodsCategoriesTranscript.get(data.id)} />
     </Link>
   )
 }
