@@ -75,7 +75,7 @@ export default function SiteFooter({ }: SiteFooterProps) {
     return (
         <footer className={"w-full font-medium"}>
             <div className={"w-full bg-neutral-900 text-white px-main-layout grid-main-layout py-16"}>
-                <div className={"flex flex-col justify-between py-2 pr-20"}>
+                <div className={"flex flex-col justify-between py-1 pr-16"}>
                     <SiteLogo dark />
                     <p className={"text-sm text-neutral-400"}>"Просто Супер" не является зарегистрированнным товарным знаком</p>
                 </div>
