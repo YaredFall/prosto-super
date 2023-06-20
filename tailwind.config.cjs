@@ -21,17 +21,24 @@ module.exports = {
           "60": 'rgba(0,0,0,0.6)',
           "80": 'rgba(0,0,0,0.8)'
         }
+      },
+      rotate: {
+        '15': '15deg',
+        '30': '30deg'
       }
     }
   },
   plugins: [
-    plugin(function({ addUtilities }) {
+    plugin(function ({ addUtilities }) {
       addUtilities({
         '.px-main-layout': {
           '@apply px-16 lg:px-32': {}
         },
         '.grid-main-layout': {
-          '@apply grid grid-cols-[repeat(auto-fit,minmax(max(20%,16rem),1fr))] gap-8': {}
+          '@apply grid grid-cols-[repeat(auto-fit,minmax(max(18%,12rem),1fr))] gap-8': {}
+        },
+        '.grid-main-layout-fill': {
+          '@apply grid grid-cols-[repeat(auto-fill,minmax(max(18%,12rem),1fr))] gap-8': {}
         }
       })
     })
