@@ -22,7 +22,7 @@ type Props = {
 export default function SortingSelector({ className, sortingType = "alphabet", sortingOrder = "desc", onChange }: Props) {
     return (
         <div className={classNames("text-lg", className)}>
-            <button className={"text-2xl hover:text-main-accent"} onClick={() => {
+            <button className={"text-2xl hover:text-main-accent p-1"} onClick={() => {
                 onChange && onChange(sortingType, sortingOrder === "asc" ? "desc" : "asc");
             }}>
                 {sortingOrder === "asc" ? 
