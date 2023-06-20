@@ -1,0 +1,241 @@
+[
+    {
+        "id": "0",
+        "name": "Цыпленок Бойлера",
+        "category": "meat",
+        "price": "373.99",
+        "sale_price": "319.99",
+        "image": ""
+    },
+    {
+        "id": "1",
+        "name": "Говяжьи колбаски",
+        "category": "meat-products",
+        "price": "279.99",
+        "sale_price": "219.99",
+        "image": ""
+    },
+    {
+        "id": "2",
+        "name": "Филе форели, нарезка",
+        "category": "seafood",
+        "price": "297.99",
+        "image": ""
+    },
+    {
+        "id": "3",
+        "name": "Колбаса докторская",
+        "category": "meat-products",
+        "price": "199.99",
+        "sale_price": "159.99",
+        "image": ""
+    },
+    {
+        "id": "4",
+        "name": "Пицца пеперрони",
+        "category": "fastfood",
+        "price": "339.99",
+        "image": ""
+    },
+    {
+        "id": "5",
+        "name": "Твогор алтайский",
+        "category": "milk",
+        "price": "278.99",
+        "image": ""
+    },
+    {
+        "id": "6",
+        "name": "Яблоки, кг",
+        "category": "fruits",
+        "price": "220.99",
+        "sale_price": "182.99",
+        "image": ""
+    },
+    {
+        "id": "7",
+        "name": "Плавленный сыр",
+        "category": "cheese",
+        "price": "129.99",
+        "sale_price": "104.99",
+        "image": ""
+    },
+    {
+        "id": "8",
+        "name": "Карбонад свинной",
+        "category": "meat",
+        "price": "359.99",
+        "image": ""
+    },
+    {
+        "id": "9",
+        "name": "Молоко",
+        "category": "milk",
+        "price": "59.99",
+        "image": ""
+    },
+    {
+        "id": "10",
+        "name": "Сметана",
+        "category": "milk",
+        "price": "72.99",
+        "image": ""
+    },
+    {
+        "id": "11",
+        "name": "Персики",
+        "category": "fruits",
+        "price": "233.99",
+        "sale_price": "189.99",
+        "image": ""
+    },
+    {
+        "id": "12",
+        "name": "Сок апельсиновый",
+        "category": "drinks",
+        "price": "129.99",
+        "sale_price": "99.99",
+        "image": ""
+    },
+    {
+        "id": "13",
+        "name": "Булочка творожная",
+        "category": "bakery",
+        "price": "34.99",
+        "image": ""
+    },
+    {
+        "id": "14",
+        "name": "Помидоры",
+        "category": "vegetables",
+        "price": "139.99",
+        "sale_price": "104.99",
+        "image": ""
+    },
+    {
+        "id": "15",
+        "name": "Кита свежемороженная",
+        "category": "seafood",
+        "price": "239.99",
+        "image": ""
+    },
+    {
+        "id": "16",
+        "name": "Огурцы",
+        "category": "vegetables",
+        "price": "129.99",
+        "sale_price": "87.99",
+        "image": ""
+    },
+    {
+        "id": "17",
+        "name": "Сельд в маринаде",
+        "category": "seafood",
+        "price": "135.99",
+        "sale_price": "109.99",
+        "image": ""
+    },
+    {
+        "id": "18",
+        "name": "Капуста пекинская",
+        "category": "vegetables",
+        "price": "112.99",
+        "sale_price": "86.99",
+        "image": ""
+    },
+    {
+        "id": "19",
+        "name": "Сыр 2",
+        "category": "cheese",
+        "price": "325.99",
+        "image": ""
+    },
+    {
+        "id": "20",
+        "name": "Добрый кола, 0.5л",
+        "category": "drinks",
+        "price": "63.99",
+        "image": ""
+    },
+    {
+        "id": "21",
+        "name": "Йогурт",
+        "category": "milk",
+        "price": "51.99",
+        "image": ""
+    },
+    {
+        "id": "22",
+        "name": "Вода минеральная, 1.5л",
+        "category": "drinks",
+        "price": "67.99",
+        "image": ""
+    },
+    {
+        "id": "23",
+        "name": "Сыр 1",
+        "category": "cheese",
+        "price": "454.99",
+        "image": ""
+    },
+    {
+        "id": "24",
+        "name": "Перец красный",
+        "category": "vegetables",
+        "price": "399.99",
+        "image": ""
+    },
+    {
+        "id": "25",
+        "name": "Черешня",
+        "category": "fruits",
+        "price": "399.99",
+        "sale_price": "305.99",
+        "image": ""
+    },
+    {
+        "id": "26",
+        "name": "Хлеб бородинский",
+        "category": "bakery",
+        "price": "37.99",
+        "image": ""
+    },
+    {
+        "id": "27",
+        "name": "Порошок стиральный",
+        "category": "chem",
+        "price": "84.99",
+        "image": ""
+    },
+    {
+        "id": "28",
+        "name": "Пицца Мясная",
+        "category": "fastfood",
+        "price": "489.99",
+        "sale_price": "399.99",
+        "image": ""
+    },
+    {
+        "id": "29",
+        "name": "Чизбургер",
+        "category": "fastfood",
+        "price": "80.99",
+        "image": ""
+    },
+    {
+        "id": "30",
+        "name": "Шоколадное мороженное, рожок",
+        "category": "icecream",
+        "price": "49.99",
+        "sale_price": "39.99",
+        "image": ""
+    },
+    {
+        "id": "31",
+        "name": "Пломбир, 800г",
+        "category": "icecream",
+        "price": "122.99",
+        "sale_price": "99.99",
+        "image": ""
+    }
+]
