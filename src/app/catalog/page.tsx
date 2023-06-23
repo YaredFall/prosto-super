@@ -20,6 +20,7 @@ export default function page({ }: Props) {
     const searchParams = useSearchParams();
 
     const categories = (searchParams.get('category') || undefined)?.split(',') as Array<GoodsCategories> | undefined;
+    const onSale = searchParams.has('on_sale');
 
     const setCategories = (newCategories: Array<GoodsCategories>) => {
         const params = new URLSearchParams(searchParams.toString());
@@ -32,10 +33,23 @@ export default function page({ }: Props) {
         router.push(pathname + '?' + params.toString());
     };
 
+    const setOnSale = (newValue: boolean) => {
+        const params = new URLSearchParams(searchParams.toString());
+        if (newValue) {
+            params.set("on_sale", "true")
+        } else {
+            params.delete("on_sale");
+        }
+
+        router.push(pathname + '?' + params.toString());
+    }
+
     const [sorting, setSorting] = useLocalStorage('sorting', localStorage.getItem('sorting') ? JSON.parse(localStorage.getItem('sorting')!) : 'alphabet,desc');
     const [sortingType, sortingOrder] = sorting.split(",") as [Parameters<typeof SortingSelector>[number]["sortingType"], Parameters<typeof SortingSelector>[number]["sortingOrder"]];
 
-    const sortedAndFilteredGoods = goodsList.filter(good => categories?.includes(good.category) ?? true).sort((a, b) => {
+    const sortedAndFilteredGoods = goodsList.filter(good => 
+        (categories?.includes(good.category) ?? true) && (onSale ? good.sale_price : true)
+    ).sort((a, b) => {
         let res = 0;
         switch (sortingType) {
             case "alphabet":
@@ -58,7 +72,7 @@ export default function page({ }: Props) {
         <main className="px-main-layout pb-16 grid grid-cols-[1fr_3fr] gap-x-8">
             <div className={"row-span-2 sticky top-0 h-max"}>
                 <h1 className={"text-4xl pb-7 pt-12 font-medium flex items-center"}>Каталог</h1>
-                <CategorySelector selectedCategories={categories} setSelectedCategories={setCategories} className={"pl-2"} />
+                <CategorySelector selectedCategories={categories} onSale={onSale} setOnSale={setOnSale} setSelectedCategories={setCategories} className={"pl-2"} />
                 <p className={"mt-4 mb-4 text-neutral-600 pl-2"}>{plural(sortedAndFilteredGoods.length, "%d товар", "%d товара", "%d товаров")}</p>
             </div>
             <SortingSelector
