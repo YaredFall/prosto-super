@@ -18,7 +18,7 @@ const GoodCard = forwardRef<HTMLDivElement, Props>(({ data }, ref) => {
         <div className="absolute inset-0 flex flex-col items-end justify-end font-medium">
           {data.sale_price && <div className={"self-start mb-auto px-4 pt-1.5 pb-1 bg-main-accent text-white rounded-br-xl font-bold"} children={"-" + ~~((+data.price - +data.sale_price) / +data.price * 100) + "%"} />}
           {data.sale_price && <div className={"bg-white pl-3 pr-2 pb-0.5 pt-1.5 text-sm rounded-tl-xl relative after:h-0.5 after:opacity-90 after:absolute after:content-[''] after:-inset-1 after:top-1/2 after:bg-main-accent after:-rotate-15"} children={data.price} />}
-          <div className={"bg-neutral-900 text-white text-lg px-4 pb-1 pt-1.5 rounded-tl-2xl"} children={data.sale_price || data.price} />
+          <div className={"bg-neutral-900 text-white text-lg px-4 pb-0.5 pt-1.5 rounded-tl-2xl"} children={data.sale_price || data.price} />
         </div>
       </div>
       <header className={"text-xl font-medium py-2 px-1"}>
