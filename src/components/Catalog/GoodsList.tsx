@@ -1,11 +1,11 @@
-import { GoodData } from "@/utils/types"
-import { createRef, useEffect, useState } from 'react'
-import { CSSTransition, TransitionGroup } from "react-transition-group"
-import GoodCard from "./GoodCard"
+import { GoodData } from "@/utils/types";
+import { createRef, useEffect, useRef, useState } from 'react';
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import GoodCard from "./GoodCard";
 
 type Props = {
-    goods: Array<GoodData>
-}
+    goods: Array<GoodData>;
+};
 
 export default function GoodsList({ goods }: Props) {
 
@@ -20,13 +20,14 @@ export default function GoodsList({ goods }: Props) {
             setDeferredGoods([]);
             setTimeout(() => {
                 setDeferredGoods([...goods]);
-            }, 500)
+            }, 500);
         }
-    }, [goods])
+    }, [goods]);
 
+    const nothingFoundRef = useRef<HTMLDivElement>(null);
 
     return (
-        <div className={"grid-main-layout-fill min-h-[75vh]"}>
+        <div className={"grid-main-layout-fill min-h-[75vh] relative"}>
             <TransitionGroup component={null}>
                 {deferredGoods.map((good, i) => (
                     <CSSTransition key={good.id}
@@ -40,7 +41,19 @@ export default function GoodsList({ goods }: Props) {
                         <GoodCard ref={nodeRefs.get(good.id)} data={good} />
                     </CSSTransition>
                 ))}
+                {!deferredGoods.length &&
+                    <CSSTransition key={"nothing"}
+                        nodeRef={nothingFoundRef}
+                        timeout={1000}
+                        classNames={{
+                            enter: "opacity-0 translate-y-4",
+                            exit: "opacity-0 duration-200"
+                        }}
+                    >
+                        <p ref={nothingFoundRef} className={"absolute text-4xl font-medium text-neutral-400 inset-0 text-center transition-all duration-500"}>Ничего не найдено!</p>
+                    </CSSTransition>
+                }
             </TransitionGroup>
         </div>
-    )
+    );
 }
