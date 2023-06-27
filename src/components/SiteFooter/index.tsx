@@ -2,6 +2,7 @@ import Link from "next/link"
 import React from 'react'
 import SiteLogo from "../SiteLogo"
 import Image from "next/image"
+import { SiteNavlinksMap } from "@/utils/misc";
 
 type SiteFooterProps = {}
 
@@ -11,19 +12,19 @@ const footerLinksSections = [
         links: [
             {
                 title: "Акции",
-                url: "/prome"
+                url: SiteNavlinksMap.get("Акции")!
             },
             {
                 title: "Программа лояльности",
-                url: "/loyalty"
+                url: SiteNavlinksMap.get("Программа лояльности")!
             },
             {
                 title: "Адреса магазинов",
-                url: "/locations"
+                url: SiteNavlinksMap.get("Магазины")!
             },
             {
                 title: "Доставка",
-                url: "/delivery"
+                url: SiteNavlinksMap.get("Доставка")!
             },
         ]
     },
