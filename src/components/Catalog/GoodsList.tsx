@@ -14,7 +14,7 @@ export default function GoodsList({ goods }: Props) {
     const [deferredGoods, setDeferredGoods] = useState(goods);
 
 
-    //trick for transitio
+    //trick for transition
     useEffect(() => {
         if (JSON.stringify(deferredGoods) !== JSON.stringify(goods)) {
             setDeferredGoods([]);
@@ -27,7 +27,7 @@ export default function GoodsList({ goods }: Props) {
     const nothingFoundRef = useRef<HTMLDivElement>(null);
 
     return (
-        <div className={"grid-main-layout-fill min-h-[75vh] relative"}>
+        <div className={"grid-main-layout grid-cols-3 min-h-[75vh] relative"}>
             <TransitionGroup component={null}>
                 {deferredGoods.map((good, i) => (
                     <CSSTransition key={good.id}
@@ -50,7 +50,7 @@ export default function GoodsList({ goods }: Props) {
                             exit: "opacity-0 duration-200"
                         }}
                     >
-                        <p ref={nothingFoundRef} className={"absolute text-4xl font-medium text-neutral-400 inset-0 text-center transition-all duration-500"}>Ничего не найдено!</p>
+                        <p ref={nothingFoundRef} className={"absolute text-4xl font-medium text-neutral-400 inset-0 px-4 transition-all duration-500"}>Ничего не найдено!</p>
                     </CSSTransition>
                 }
             </TransitionGroup>

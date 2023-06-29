@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ru">
+    <html lang="ru" className={"text-xs sm:text-base"}>
       <body className={roboto.className}>
       <SiteHeader />
       {children}

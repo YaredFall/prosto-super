@@ -3,26 +3,28 @@
 @tailwind utilities;
 
 :root, body {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 :root {
+    overflow-x: clip;
+    scrollbar-gutter: stable;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-  }
+    :root {
+    }
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-  margin-bottom: auto;
+    margin-bottom: auto;
 }
 
 a[target="_blank"] {
-  cursor: alias;
+    cursor: alias;
 }

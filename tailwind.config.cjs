@@ -35,10 +35,7 @@ module.exports = {
           '@apply px-16 lg:px-32': {}
         },
         '.grid-main-layout': {
-          '@apply grid grid-cols-[repeat(auto-fit,minmax(max(12%,12rem),1fr))] gap-8': {}
-        },
-        '.grid-main-layout-fill': {
-          '@apply grid grid-cols-[repeat(auto-fill,minmax(max(12%,12rem),1fr))] gap-8': {}
+          '@apply grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8': {}
         }
       })
     })

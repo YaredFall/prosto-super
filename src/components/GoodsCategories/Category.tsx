@@ -10,7 +10,7 @@ type Props = {
 
 export default function Category({ data }: Props) {
   return (
-    <Link href={`/catalog?category=${data.id}`} className='grid group'>
+    <Link href={`/catalog?category=${data.id}`} className='flex flex-col group min-w-[12rem]'>
       <div className={"bg-gray-300 aspect-square relative rounded-2xl overflow-hidden"}>
         {data.image && <Image src={data.image} alt={GoodsCategoriesTranscript.get(data.id) || ""} fill className={"object-cover transition-[filter] group-hover:brightness-75"} />}
       </div>

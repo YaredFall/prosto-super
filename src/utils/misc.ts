@@ -1,3 +1,5 @@
+export const LAYOUT_BREAKPOINT = 640;
+
 export const GoodsCategoriesTranscript = new Map([
     ["milk", "Молочная продукция"],
     ["bakery", "Хлеб и выпечка"],

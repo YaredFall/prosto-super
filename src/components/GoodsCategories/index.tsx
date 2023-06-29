@@ -16,7 +16,7 @@ export default function GoodsCategories({}: Props) {
             <span>Каталог</span><HiOutlineChevronRight className="inline-flex ml-2 p-2" />
           </Link>
         </h2>
-        <ul className={"w-full grid-main-layout"}>
+        <ul className={"w-full grid-main-layout grid-cols-[repeat(2,minmax(min-content,1fr))]"}>
             {categories.map(c => (<Category data={c} key={c.id} />))}
         </ul>
     </section>

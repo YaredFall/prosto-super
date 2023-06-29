@@ -13,7 +13,7 @@ const GoodCard = forwardRef<HTMLDivElement, Props>(({ data }, ref) => {
         {data.image ?
           <Image src={data.image} fill alt={data.name} className="object-cover" />
           :
-          <span className={"text-neutral-300 font-bold text-4xl text-center"}>Картинка отсутствует</span>
+          <span className={"text-neutral-300 font-bold text-[140%] text-center"}>Картинка отсутствует</span>
         }
         <div className="absolute inset-0 flex flex-col items-end justify-end font-medium">
           {data.sale_price && <div className={"self-start mb-auto px-4 pt-1.5 pb-1 bg-main-accent text-white rounded-br-xl font-bold"} children={"-" + ~~((+data.price - +data.sale_price) / +data.price * 100) + "%"} />}
