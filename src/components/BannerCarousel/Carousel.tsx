@@ -62,11 +62,11 @@ const Carousel: FC<CarouselProps> = () => {
                                        key={banner.title}
                                        timeout={700}
                                        classNames={{
-                                           enter: "translate-x-[0]",
-                                           exit: "translate-x-[-100%]"
+                                           enter: "translate-x-[0] duration-75",
+                                           exit: "translate-x-[-100%] opacity-0"
                                        }}
                         >
-                            <div ref={bannerRefs[activeBanner]} className={"absolute inset-0 transition-transform duration-700"}>
+                            <div ref={bannerRefs[activeBanner]} className={"absolute inset-0 transition-all duration-700"}>
                                 <Banner data={banner} />
                             </div>
                         </CSSTransition>
