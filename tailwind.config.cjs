@@ -20,7 +20,8 @@ module.exports = {
         'black-alpha': {
           "60": 'rgba(0,0,0,0.6)',
           "80": 'rgba(0,0,0,0.8)'
-        }
+        },
+        'secondary-accent': '#6EB90C'
       },
       rotate: {
         '15': '15deg',
