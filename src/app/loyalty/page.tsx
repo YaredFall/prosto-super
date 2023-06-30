@@ -9,9 +9,9 @@ export default function page({ }: Props) {
     return (
         <main className={"mt-16 font-medium"}>
             <h1 className={"mb-4 px-main-layout"}>О программе лояльности</h1>
-            <div className={"py-12 px-main-layout bg-pink-100 text-black mb-16"}>
+            <div className={"py-12 px-main-layout flex flex-col items-center bg-pink-100 text-black mb-16"}>
                 <h2 className={"text-4xl"}>Больше покупаешь - больше экономишь!</h2>
-                <div className={"flex items-center justify-between my-16 text-7xl font-bold"}>
+                <div className={"flex items-center  my-16 text-7xl font-bold gap-8 lg:gap-32"}>
                     <div className={"w-32 h-32 bg-red-200 flex items-center justify-center rounded-xl"}>₽</div>
                     <HiArrowNarrowRight />
                     <div className={"w-32 h-32 bg-secondary-accent text-white flex items-center justify-center rounded-xl"}>Б</div>
@@ -20,9 +20,9 @@ export default function page({ }: Props) {
                 </div>
                 <p className={"text-lg"}>Совершай регулярный покупки и получай больше бонусов</p>
             </div>
-            <div className={"py-12 px-main-layout bg-emerald-200 text-black mb-16"}>
+            <div className={"py-12 px-main-layout flex flex-col items-center bg-emerald-200 text-black mb-16"}>
                 <h2 className={"text-4xl"}>Постоянные акции и бонусные рубли</h2>
-                <div className={"my-16 flex items-center justify-around text-7xl"}>
+                <div className={"my-16 flex items-center text-7xl font-bold gap-8 lg:gap-32"}>
                     <div className={"bg-main-accent relative w-64 h-40 rounded-xl overflow-hidden text-white"}>
                         <span className='absolute top-12 left-4 text-3xl'>Супер карта</span>
                         <span className='absolute bottom-4 right-8 text-lg'>000 000</span>
@@ -37,9 +37,9 @@ export default function page({ }: Props) {
                 </div>
                 <p className={"text-lg"}>Оформи карту в любом магазине сети</p>
             </div>
-            <div className={"py-12 px-main-layout mb-16 bg-orange-200"}>
+            <div className={"py-12 px-main-layout mb-16 flex flex-col items-center bg-orange-200"}>
                 <h2 className={"text-4xl"}>Виртуальная карта в твоем телефоне</h2>
-                <div className={"my-16 text-7xl flex items-center justify-around "}>
+                <div className={"my-16 text-7xl flex items-center gap-8 lg:gap-32"}>
                     <BsFillPersonFill className='text-white bg-neutral-500 rounded-xl w-32 h-32' />
                     <HiArrowNarrowRight />
                     <div className='rounded-xl h-32 w-32 relative overflow-hidden outline-8 outline outline-red-400'>
