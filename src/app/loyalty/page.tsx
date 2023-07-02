@@ -2,10 +2,12 @@ import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { BsFillPersonFill } from 'react-icons/bs'
 import Image from 'next/image';
+import RelativeLink from '@/components/common/RelativeLink';
 
 type Props = {};
 
 export default function page({ }: Props) {
+    
     return (
         <main className={"mt-16 font-medium"}>
             <h1 className={"mb-4 px-main-layout"}>О программе лояльности</h1>
@@ -37,7 +39,7 @@ export default function page({ }: Props) {
                 </div>
                 <p className={"text-lg"}>Оформи карту в любом магазине сети</p>
             </div>
-            <div className={"py-12 px-main-layout mb-16 flex flex-col items-center bg-orange-200"}>
+            <div className={"py-12 px-main-layout flex flex-col items-center bg-orange-200"}>
                 <h2 className={"text-4xl"}>Виртуальная карта в твоем телефоне</h2>
                 <div className={"my-16 text-7xl flex items-center gap-8 lg:gap-32"}>
                     <BsFillPersonFill className='text-white bg-neutral-500 rounded-xl w-32 h-32' />
@@ -50,6 +52,9 @@ export default function page({ }: Props) {
                     </div>
                 </div>
                 <p className={"text-lg"}>Просто зарегистрируйся на сайте</p>
+            </div>
+            <div className={"my-8 px-main-layout flex justify-end text-neutral-400 underline hover:text-neutral-900"}>
+                <RelativeLink href={"terms"} children={"Подробные правила участия в программе лояльности"} />
             </div>
         </main>
     );
