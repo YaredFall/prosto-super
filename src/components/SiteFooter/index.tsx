@@ -33,19 +33,19 @@ const footerLinksSections = [
         links: [
             {
                 title: "Поставщикам",
-                url: "/suppliers"
+                url: SiteNavlinksMap.get("Партнерам") + "#suppliers"
             },
             {
                 title: "Рекламодателям",
-                url: "/advertisers"
+                url: SiteNavlinksMap.get("Партнерам") + "#advertisers"
             },
             {
                 title: "Аренда",
-                url: "/lease"
+                url: SiteNavlinksMap.get("Партнерам") + "#lease"
             },
             {
                 title: "Документооборот",
-                url: "/documetns"
+                url: SiteNavlinksMap.get("Партнерам") + "#documents"
             },
         ]
     },
