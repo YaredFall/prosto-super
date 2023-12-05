@@ -9,10 +9,10 @@ import useLocalStorage from "@/hooks/useLocalStorage";
 import SortingSelector from "@/components/Catalog/SortingSelector";
 import plural from "plural-ru";
 import { useWindowWidth } from '@/hooks/useWindowWidth';
-import classNames from 'classnames';
+import { cn } from "@/lib/utils";
 import { LAYOUT_BREAKPOINT } from '@/utils/misc';
-import { BsCheckLg } from 'react-icons/bs'
-import { TbFilter } from 'react-icons/tb'
+import { BsCheckLg } from 'react-icons/bs';
+import { TbFilter } from 'react-icons/tb';
 
 
 const goodsList: Array<GoodData> = require('@/api-placeholder/goods-list.json');
@@ -90,19 +90,19 @@ export default function page({ }: Props) {
     const isSmallScreen = windowWidth ? windowWidth < LAYOUT_BREAKPOINT : false;
 
     const [isCategorySelectorOpen, setIsCategorySelectorOpen] = useState(false);
-    
+
     useLayoutEffect(() => {
-        document.documentElement.classList.toggle("overflow-clip", isCategorySelectorOpen)
-    }, [isCategorySelectorOpen])
+        document.documentElement.classList.toggle("overflow-clip", isCategorySelectorOpen);
+    }, [isCategorySelectorOpen]);
 
     return (
-        <main className={classNames("px-main-layout pb-16 grid gap-x-8", isSmallScreen ? "grid-cols-[auto]" : "grid-cols-[1fr_3fr]")}>
-            <div className={classNames("row-span-2 h-max z-10", !isSmallScreen && "sticky top-0")}>
+        <main className={cn("px-main-layout pb-16 grid gap-x-8", isSmallScreen ? "grid-cols-[auto]" : "grid-cols-[1fr_3fr]")}>
+            <div className={cn("row-span-2 h-max z-10", !isSmallScreen && "sticky top-0")}>
                 <div className={"pb-7 pt-12 flex items-center justify-between"}>
                     <h1 className={"text-4xl font-medium"}>Каталог</h1>
                     {isSmallScreen && <button className={"text-4xl"} onClick={() => setIsCategorySelectorOpen(prev => !prev)}>{isCategorySelectorOpen ? <BsCheckLg /> : <TbFilter />}</button>}
                 </div>
-                <div className={classNames(isSmallScreen && "absolute text-2xl bg-white w-screen left-0 px-main-layout -mt-8 pt-8 h-screen transition-transform duration-500", !isSmallScreen || isCategorySelectorOpen ? "translate-x-0" : "translate-x-full")}>
+                <div className={cn(isSmallScreen && "absolute text-2xl bg-white w-screen left-0 px-main-layout -mt-8 pt-8 h-screen transition-transform duration-500", !isSmallScreen || isCategorySelectorOpen ? "translate-x-0" : "translate-x-full")}>
                     <CategorySelector selectedCategories={categories}
                         onSale={onSale}
                         setOnSale={setOnSale}
@@ -120,7 +120,7 @@ export default function page({ }: Props) {
                 onChange={(newType, newOrder) => {
                     setSorting(`${newType},${newOrder}`);
                 }}
-                className={classNames("flex h-10 mb-8 gap-8", isSmallScreen ? "mt-0" : "mt-12")}
+                className={cn("flex h-10 mb-8 gap-8", isSmallScreen ? "mt-0" : "mt-12")}
             />
             <GoodsList goods={sortedAndFilteredGoods} />
         </main>

@@ -3,7 +3,7 @@
 import { FC, Ref, useEffect, useRef, useState } from 'react';
 import banners from '../../api-placeholder/banners.json';
 import Banner from './Banner';
-import classNames from "classnames";
+import { cn } from "@/lib/utils";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 type CarouselProps = {}
@@ -80,7 +80,7 @@ const Carousel: FC<CarouselProps> = () => {
                             className={"p-2 w-6 h-6"}
                             disabled={i === activeBanner}
                     >
-                        <div className={classNames("h-full w-full rounded-full bg-current transition-transform",
+                        <div className={cn("h-full w-full rounded-full bg-current transition-transform",
                             i === activeBanner && "scale-[200%]")}
                         />
                     </button>

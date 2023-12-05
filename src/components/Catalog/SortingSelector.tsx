@@ -1,6 +1,6 @@
 'use client'
 
-import classNames from "classnames";
+import { cn } from "@/lib/utils";
 import React from 'react';
 import { LuArrowDownAZ, LuArrowDownNarrowWide, LuArrowDownWideNarrow, LuArrowDownZA } from 'react-icons/lu';
 
@@ -21,7 +21,7 @@ type Props = {
 
 export default function SortingSelector({ className, sortingType = "alphabet", sortingOrder = "desc", onChange }: Props) {
     return (
-        <div className={classNames("text-lg", className)}>
+        <div className={cn("text-lg", className)}>
             <button className={"text-2xl hover:text-main-accent p-1"} onClick={() => {
                 onChange && onChange(sortingType, sortingOrder === "asc" ? "desc" : "asc");
             }}>
@@ -32,7 +32,7 @@ export default function SortingSelector({ className, sortingType = "alphabet", s
             {
                 SORTING_TYPES.map(type => (
                     <button key={type}
-                        className={classNames("px-2 hover:text-main-accent transition-colors", sortingType === type && "font-medium pointer-events-none")}
+                        className={cn("px-2 hover:text-main-accent transition-colors", sortingType === type && "font-medium pointer-events-none")}
                         disabled={sortingType === type}
                         onClick={() => {
                             onChange && onChange(type, sortingOrder);
