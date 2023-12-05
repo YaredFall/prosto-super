@@ -3,7 +3,7 @@ type Props = {};
 export default function page({ }: Props) {
   return (
     <main className="px-2main-layout my-4 mt-8 mb-16">
-      <h1 className="text-xl font-semibold">О компании</h1>
+      <h1 className="text-xl font-semibold mb-4">О компании</h1>
       <div className="max-w-[160ch]">
         <p className="my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos asperiores accusantium aliquam est unde, tenetur officia, blanditiis qui sit eaque laborum consequatur iure libero natus minus consectetur quasi nemo soluta!
         Tenetur vitae odio maiores nihil, culpa consequuntur? Quidem, alias. Sint corrupti delectus, eum quam, obcaecati, fugit nisi reiciendis rerum dicta ipsum placeat ad atque? Soluta ut at ad perspiciatis numquam.
