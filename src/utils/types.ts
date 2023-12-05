@@ -15,3 +15,7 @@ export type GoodData = {
     sale_price?: string
     image: string
 }
+
+export type User = {
+    phone: string
+}

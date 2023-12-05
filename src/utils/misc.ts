@@ -22,10 +22,12 @@ export const SiteNavlinksMap = new Map([
     ["Акции", "/catalog?on_sale=true"],
     ["Программа лояльности", "/loyalty"],
     ["Магазины", "/locations"],
-    ["Доставка", "/delivery"],
     ["Партнерам", "/partners"],
     ["Вакансии", "/work"],
-    ["О нас", "/about"]
+    ["О нас", "/about"],
+    ["Личный кабинет", "/profile"],
 ] as const);
 
 export const SITE_NAVLINKS_LABELS = Array.from(SiteNavlinksMap.keys());
+
+export const USER_COOKIE_KEY = "ps-user";

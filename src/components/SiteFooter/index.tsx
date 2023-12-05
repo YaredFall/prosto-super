@@ -23,8 +23,8 @@ const footerLinksSections = [
                 url: SiteNavlinksMap.get("Магазины")!
             },
             {
-                title: "Доставка",
-                url: SiteNavlinksMap.get("Доставка")!
+                title: "Личный кабинет",
+                url: SiteNavlinksMap.get("Личный кабинет")!
             },
         ]
     },
