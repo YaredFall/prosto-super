@@ -11,8 +11,6 @@ import { useLayoutEffect, useState } from "react";
 
 type Props = {}
 
-let location = typeof window !== undefined ? window.location : undefined;
-
 export default function page({ }: Props) {
 
     const [topics, setTopics] = useState<Array<string>>([]);
