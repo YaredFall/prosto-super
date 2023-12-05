@@ -4,11 +4,11 @@ type Props = {}
 
 export default function page({ }: Props) {
     return (
-        <main className={"px-main-layout mb-16 text-lg max-w-[150ch]"}>
-            <h1 className={"text-4xl py-4 mb-4"}>Правила Программы лояльности «Просто Супер»</h1>
+        <main className={"px-2main-layout mt-8 mb-16 max-w-[160ch]"}>
+            <h1 className={"text-xl mb-4 font-semibold"}>Правила программы лояльности «Просто Супер»</h1>
             <ol className={"list-decimal list-inside flex flex-col gap-8"}>
                 <li>
-                    <span className={"text-xl font-medium"}>Lorem, ipsum dolor.</span>
+                    <span className={"text-lg font-medium"}>Lorem, ipsum dolor.</span>
                     <ol className={"list-decimal pl-12 flex flex-col gap-2 mt-2"}>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, officiis!</li>
                         <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero totam obcaecati, minima officiis consequatur voluptates unde est suscipit sapiente? Assumenda!</li>
@@ -17,7 +17,7 @@ export default function page({ }: Props) {
                     </ol>
                 </li>
                 <li>
-                    <span className={"text-xl font-medium"}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corporis deleniti commodi, quasi laborum culpa!</span>
+                    <span className={"text-lg font-medium"}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corporis deleniti commodi, quasi laborum culpa!</span>
                     <ol className={"list-decimal pl-12 flex flex-col gap-2 mt-2"}>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, officiis!</li>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet saepe unde eos, odio eum recusandae ut aliquid tempora. Adipisci nostrum maxime voluptate delectus necessitatibus, error neque?</li>
@@ -25,7 +25,7 @@ export default function page({ }: Props) {
                     </ol>
                 </li>
                 <li>
-                    <span className={"text-xl font-medium"}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi eos maxime quasi!</span>
+                    <span className={"text-lg font-medium"}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi eos maxime quasi!</span>
                     <ol className={"list-decimal pl-12 flex flex-col gap-2 mt-2"}>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, officiis!</li>
                         <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero totam obcaecati, minima officiis consequatur voluptates unde est suscipit sapiente? Assumenda!</li>

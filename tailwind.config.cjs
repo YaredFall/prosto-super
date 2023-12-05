@@ -96,6 +96,9 @@ module.exports = {
         '.px-main-layout': {
           '@apply px-16 lg:px-32': {}
         },
+        '.px-2main-layout': {
+          '@apply px-32 lg:px-64': {}
+        },
         '.grid-main-layout': {
           '@apply grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8': {}
         }

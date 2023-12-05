@@ -9,9 +9,9 @@ type Props = {};
 export default function page({ }: Props) {
     
     return (
-        <main className={"mt-16 font-medium"}>
-            <h1 className={"mb-4 px-main-layout"}>О программе лояльности</h1>
-            <div className={"py-12 px-main-layout flex flex-col items-center bg-pink-100 text-black mb-16"}>
+        <main className={"mt-8 font-medium"}>
+            <h1 className={"mb-4 px-2main-layout text-xl font-semibold"}>О программе лояльности</h1>
+            <div className={"py-12 px-2main-layout flex flex-col items-center bg-pink-100 text-black mb-16"}>
                 <h2 className={"text-4xl"}>Больше покупаешь - больше экономишь!</h2>
                 <div className={"flex items-center  my-16 text-7xl font-bold gap-8 lg:gap-32"}>
                     <div className={"w-32 h-32 bg-red-200 flex items-center justify-center rounded-xl"}>₽</div>
@@ -22,7 +22,7 @@ export default function page({ }: Props) {
                 </div>
                 <p className={"text-lg"}>Совершай регулярный покупки и получай больше бонусов</p>
             </div>
-            <div className={"py-12 px-main-layout flex flex-col items-center bg-emerald-200 text-black mb-16"}>
+            <div className={"py-12 px-2main-layout flex flex-col items-center bg-emerald-200 text-black mb-16"}>
                 <h2 className={"text-4xl"}>Постоянные акции и бонусные рубли</h2>
                 <div className={"my-16 flex items-center text-7xl font-bold gap-8 lg:gap-32"}>
                     <div className={"bg-main-accent relative w-64 h-40 rounded-xl overflow-hidden text-white"}>
@@ -39,7 +39,7 @@ export default function page({ }: Props) {
                 </div>
                 <p className={"text-lg"}>Оформи карту в любом магазине сети</p>
             </div>
-            <div className={"py-12 px-main-layout flex flex-col items-center bg-orange-200"}>
+            <div className={"py-12 px-2main-layout flex flex-col items-center bg-orange-200"}>
                 <h2 className={"text-4xl"}>Виртуальная карта в твоем телефоне</h2>
                 <div className={"my-16 text-7xl flex items-center gap-8 lg:gap-32"}>
                     <BsFillPersonFill className='text-white bg-neutral-500 rounded-xl w-32 h-32' />
@@ -53,7 +53,7 @@ export default function page({ }: Props) {
                 </div>
                 <p className={"text-lg"}>Просто зарегистрируйся на сайте</p>
             </div>
-            <div className={"my-8 px-main-layout flex justify-end text-neutral-400 underline hover:text-neutral-900"}>
+            <div className={"my-8 px-2main-layout flex justify-end text-neutral-400 underline hover:text-neutral-900"}>
                 <RelativeLink href={"terms"} children={"Подробные правила участия в программе лояльности"} />
             </div>
         </main>
