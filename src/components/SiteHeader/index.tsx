@@ -8,7 +8,7 @@ type SiteHeaderProps = {
 
 const SiteHeader:FC<SiteHeaderProps> = () => {
     return (
-        <header className={"flex w-full items-center"}>
+        <header className={"flex w-full items-center bg-gray-50"}>
             <SiteLogo className="px-8 py-6" />
             <Nav />
         </header>
