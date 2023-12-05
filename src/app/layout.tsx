@@ -3,6 +3,7 @@ import { Roboto } from 'next/font/google'
 import SiteHeader from "@/components/SiteHeader";
 import React from "react";
 import SiteFooter from "@/components/SiteFooter";
+import { Toaster } from '@/components/ui/toaster';
 
 const roboto = Roboto({ subsets: ['latin', 'cyrillic'], weight: ["100", "300", "400", "500", "700", "900"], display: 'swap' })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <SiteHeader />
       {children}
       <SiteFooter />
+      <Toaster />
       </body>
     </html>
   )

@@ -8,7 +8,6 @@
 
 :root {
     overflow-x: clip;
-    scrollbar-gutter: stable;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +18,9 @@
 body {
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    height: 100vh;
+    scrollbar-gutter: stable;
 }
 
 main {
