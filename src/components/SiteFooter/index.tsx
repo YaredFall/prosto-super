@@ -75,10 +75,10 @@ const footerLinksSections = [
 export default function SiteFooter({ }: SiteFooterProps) {
     return (
         <footer className={"w-full font-medium"}>
-            <div className={"w-full bg-neutral-900 text-white px-main-layout lg:grid-cols-4 py-16 grid gap-8 grid-cols-2"}>
+            <div className={"w-full bg-neutral-900 text-white px-main-layout lg:grid-cols-4 py-16 grid gap-8 grid-cols-2 [box-shadow:32px_0_theme(colors.neutral.900)]"}>
                 <div className={"flex flex-col justify-between py-1 pr-16"}>
                     <SiteLogo dark />
-                    <p className={"text-sm text-neutral-400"}>"Просто Супер" не является зарегистрированнным товарным знаком</p>
+                    <p className={"text-sm text-neutral-400"}>"Просто Супер" не является зарегистрированным товарным знаком</p>
                 </div>
                 {footerLinksSections.map(s => (
                     <div key={s.header}>
