@@ -15,9 +15,7 @@ let location = typeof window !== undefined ? window.location : undefined;
 
 export default function page({ }: Props) {
 
-    const hash = location?.hash.split('#')[1];
-
-    const [topics, setTopics] = useState<Array<string>>(hash ? [hash] : []);
+    const [topics, setTopics] = useState<Array<string>>([]);
 
     const params = useParams();
 
